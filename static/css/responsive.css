@@ -1,5 +1,5 @@
-﻿/*================================ 
-    #RESPONSIVE CSS 
+﻿/*================================
+    #RESPONSIVE CSS
 ====================================*/
 
 /* Tablet Layout: 768px.*/
@@ -286,7 +286,7 @@
     margin-left: 8px;
     margin-right: 8px;
   }
-    
+
 
 }
 
@@ -338,7 +338,7 @@
     box-shadow: inherit;
   }
 
-  .breadcrumb-area .breadcrumb a, 
+  .breadcrumb-area .breadcrumb a,
   .breadcrumb-area .breadcrumb li {
     color: #ffffff;
   }
@@ -516,7 +516,7 @@
     margin-top: 30px;
   }
 
-  .clients-area .partner-carousel, 
+  .clients-area .partner-carousel,
   .clients-area .clients-carousel {
     margin-top: 30px;
   }
@@ -901,7 +901,7 @@
     margin-right: 8px;
   }
 
-  
+
 }
 
 /* Max Wide Mobile Layout: 600px. */

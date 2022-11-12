@@ -222,6 +222,7 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px;
+    font-family: 'Noto Serif SC', serif;
 }
 
 .navbar-brand:hover,
