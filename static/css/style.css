@@ -2735,9 +2735,6 @@ body,
     margin-top: -1px;
 }
 
-.overview-area .overview-carousel.owl-carousel img{
-    height: 300px;
-}
 
 .overview-area .overview-carousel.owl-carousel .owl-dots {
     margin-top: 40px;
