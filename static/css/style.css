@@ -4191,9 +4191,11 @@ ul.achivement li .medium {
 
 .about-us-area .info,
 .about-us-area img {
-    width: 100%;
-    height: 200px;
-    background-color: #CCC;
+    /*width: 100%;*/
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    /*background-color: #CCC;*/
 }
 
 .about-us-area p{
