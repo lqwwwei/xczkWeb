@@ -47,6 +47,10 @@
     margin: 50px auto auto;
   }
 
+  .banner-area .thumb img {
+    width: 80%;
+  }
+
   /* About */
   .about-area .thumb {
     padding-right: 0;
@@ -433,6 +437,16 @@
   }
 
   .about-area .thumb img:nth-child(2) {
+    display: none;
+  }
+
+  .banner-area .thumb img:nth-child(1){
+    position: static;
+    /*right: -80px;*/
+    /*bottom: -150px;*/
+  }
+
+  .banner-area .thumb img:nth-child(2) {
     display: none;
   }
 
