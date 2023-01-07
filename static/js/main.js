@@ -1,9 +1,9 @@
 /* ===================================================================
-    
+
     Author          : Valid Theme
     Template Name   : Softar - Software Landing Page
     Version         : 1.2
-    
+
 * ================================================================= */
 
 (function($) {
@@ -23,13 +23,13 @@
             live: true // act on asynchronously loaded content (default is true)
         });
         wow.init();
-        
+
 
         /* ==================================================
             # Tooltip Init
         ===============================================*/
-        $('[data-toggle="tooltip"]').tooltip(); 
-        
+        $('[data-toggle="tooltip"]').tooltip();
+
 
 
         /* ==================================================
@@ -41,7 +41,7 @@
         });
         $('a.smooth-menu').on('click', function(event) {
             var $anchor = $(this);
-            var headerH = '75';
+            var headerH = '120';
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
             }, 1500, 'easeInOutExpo');
@@ -232,7 +232,7 @@
             ]
         });
 
-        
+
         /* ==================================================
             # Partner Carousel
          ===============================================*/
