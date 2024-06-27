@@ -9,3 +9,16 @@ docs/_book
 # TODO: where does this rule come from?
 test/
 
+node_modules/
+.DS_Store/
+dist/
+dist-ssr
+*.local
+.vscode/
+.idea/
+.git/
+.svn/
+
+yarn-error.log
+package-lock.json
+/desktop.ini
