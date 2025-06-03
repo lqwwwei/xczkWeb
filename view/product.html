@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 保持原有的head内容不变 -->
+  <!-- ... -->
+</head>
+<body>
+
+<!-- 添加头部容器 -->
+<div id="header-container"></div>
+
+<!-- 页面其他内容 -->
+<div class="banner-area text-capitalized bg-bottom text-light text-default"
+     style="background-image: url(static/images/11.png);">
+  <!-- 页面内容保持不变 -->
+</div>
+
+<!-- 确保jQuery在load之前加载 -->
+<script src="static/js/jquery-1.12.4.min.js"></script>
+<script>
+  $(function(){
+    // 加载头部内容
+    $("#header-container").load("header.html", function() {
+      // 加载完成后可以执行的回调函数
+      console.log("头部加载完成");
+      
+      // 如果需要重新初始化一些插件，可以在这里做
+      // 例如: $('.bootsnav').bootsnav();
+    });
+  });
+</script>
+
+<!-- 其他脚本文件 -->
+<script src="static/js/popper.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<!-- ... 其他脚本 ... -->
+</body>
+</html>

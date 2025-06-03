@@ -9,8 +9,34 @@
 (function($) {
     "use strict";
 
-    $(document).on('ready', function() {
+    $('#global-header').load('/static/partials/header.html', function() {
+        // 初始化导航组件
+        $('.bootsnav').bootsnav({
+            animation: true,
+            scrollFix: true
+        });
+        
+        // 初始化WOW动画
+        new WOW().init({
+            offset: 100,
+            mobile: true
+        });
 
+        // 设置当前菜单激活状态
+        const currentPath = window.location.pathname;
+        $('.nav li a').each(function() {
+            if ($(this).attr('href') === currentPath) {
+                $(this).parent().addClass('active');
+            }
+        });
+
+        // 移动端菜单点击关闭
+        $('.navbar-collapse a').click(function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
+
+    $(document).on('ready', function() {
 
         /* ==================================================
             # Wow Init
