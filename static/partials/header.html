@@ -1,8 +1,8 @@
-
 <header id="home">
 
   <!-- Start Navigation -->
-  <nav class="navbar navbar-default attr-bg navbar-fixed white no-background bootsnav" style="z-index: 999999">
+  <nav class="navbar navbar-default attr-bg navbar-fixed white no-background bootsnav"
+    style="z-index: 999999 ;background-color: #fff;">
 
     <div class="container">
 
@@ -11,7 +11,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
           <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" style="color: #000;">
           杭州星诚智控科技有限公司
         </a>
       </div>
@@ -21,22 +21,30 @@
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
           <li>
-            <a class="smooth-menu" href="#home">主页</a>
+            <a class="smooth-menu" href="/index.html" style="color: #000;">主页</a>
           </li>
           <li>
-           <li><a href="view/product.html">产品中心</a></li>
+          <li class="dropdown">
+            <a href="/view/product.html" class="dropdown-toggle" data-hover="dropdown" style="color: #000;">产品中心</a>
+            <ul class="dropdown-menu">
+              <li><a href="/view/product1.html">智慧物联</a></li>
+              <li><a href="/view/product1.html">全生命周期</a></li>
+              <li><a href="/view/product2.html">超声质控</a></li>
+              <li><a href="/view/product2.html">智慧后勤</a></li>
+            </ul>
+          </li>
           </li>
           <li>
-            <a class="smooth-menu" href="#features">产品特色</a>
+            <a class="smooth-menu" href="#features" style="color: #000;">产品特色</a>
           </li>
           <li>
-            <a class="smooth-menu" href="#overview">产品概览</a>
+            <a class="smooth-menu" href="#overview" style="color: #000;">产品概览</a>
           </li>
           <li>
-            <a class="smooth-menu" href="#about-us">关于我们</a>
+            <a class="smooth-menu" href="#about-us" style="color: #000;">关于我们</a>
           </li>
           <li>
-            <a class="smooth-menu" href="#contact">联系我们</a>
+            <a class="smooth-menu" href="#contact" style="color: #000;">联系我们</a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -45,3 +53,36 @@
   <!-- End Navigation -->
 
 </header>
+<!-- End Header -->
+<style>
+  /* 子导航样式 */
+  .navbar-nav>li.dropdown:hover>.dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s ease;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 20px;
+    color: #333 !important;
+    display: block;
+    transition: background 0.3s;
+  }
+
+  .dropdown-menu li a:hover {
+    background: #f8f9fa;
+    color: #00a8ff !important;
+  }
+</style>
