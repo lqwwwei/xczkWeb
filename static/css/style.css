@@ -905,7 +905,8 @@ button, button:focus {
      # Bradcrumb
 =================================================================== */
 .breadcrumb-area {
-    padding: 150px 0;
+    /* padding: 150px 0; */
+    margin-top: 120px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -914,6 +915,8 @@ button, button:focus {
 .breadcrumb-area .row {
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
 .breadcrumb-area .breadcrumb {
@@ -937,9 +940,9 @@ button, button:focus {
 .breadcrumb > li + li::before {
     content: "\f105";
     font-family: "Font Awesome 5 Free";
-    font-weight: 600;
+    font-weight: 100;
     padding: 0 5px;
-    color: #ffffff;
+   color: #888888;
     display: none;
 }
 
@@ -961,7 +964,7 @@ button, button:focus {
     margin-top: -1px;
     position: absolute;
     top: 50%;
-    background: #ffffff;
+    background: #888888;
     width: 15px;
 }
 
@@ -973,7 +976,7 @@ button, button:focus {
 .breadcrumb-area .breadcrumb li {
     font-weight: 600;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #888888;
     font-size: 14px;
 }
 
