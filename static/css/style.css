@@ -245,7 +245,7 @@ input {
 
 .container-full {
     padding: 0 15px;
-    margin: 0 auto 20px;
+    /* margin: 0 auto 20px; */
     max-width: 1400px;
 }
 
@@ -2698,7 +2698,7 @@ body,
     content: "";
     height: 350px;
     width: 100%;
-    background: #ffffff;
+    /* background: #ffffff; */
     z-index: -1;
 }
 

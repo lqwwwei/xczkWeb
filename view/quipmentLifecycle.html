@@ -56,39 +56,16 @@
 
   <!-- Start Banner
 ============================================= -->
-  <div class="banner-area text-capitalized bg-bottom text-light text-default"
-    style="background-color: rgb(243, 243, 244);">
-    <div class="container">
-      <div class="breadcrumb-area" style="height: 40px;">
-        <div class="row" style="margin-top: 8px;">
-          <ol class="breadcrumb">
-            <li><img src="/static/images/position.png">当前位置：首页</li>
-            <li>产品中心</li>
-            <li>智慧物联</li>
-          </ol>
-        </div>
-      </div>
-      <div class="maincontain">
-        <div class="left-nav" style="height: 260px;width: 310px;background-color: #ffffff;">
-          <ul class="nav-list">
-            <li class="nav-item active">
-              <span>智慧物联</span>
-            </li>
-            <li class="nav-item">
-              <span>超声质控</span>
-            </li>
-            <li class="nav-item">
-              <span>智慧后勤</span>
-            </li>
-            <li class="nav-item">
-              <span>全生命周期</span>
-            </li>
-          </ul>
+<div id="overview" class="overview-area relative default-padding-top carousel-shadow" style="background-color: rgb(243, 243, 244)">
 
-        </div>
-        <div class="right-detial">
-          <div class="detial-title" style="height: 70px;">
-            <div class="title"><span>医疗设备智慧物联平台</span>
+  <div id="breadcrumb-placeholder"></div>
+
+
+
+      <div class="container" style="background-color: #fff;padding-top: 20px;">
+       
+          <div class="detial-title">
+            <div class="title"><span>设备全生命周期</span>
               <div class="timeBox">
                 <p>更新时间：2025-6-5</p>
               </div>
@@ -109,16 +86,69 @@
             <p>效率分析：</p>
             <p>效益分析：</p>
             <p>区域平台：</p>
-            
           </div>
-          
+
+                 <div class="container-full">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="overview-carousel owl-carousel owl-theme">
+            <!-- Single item -->
+            <div class="item">
+              <img src="/static/picture/software2-1.png" alt="Thumb">
+              <div class="content">
+                <h4><span>01</span>CT设备列表</h4>
+              </div>
+            </div>
+            <!-- End Single item -->
+            <!-- Single item -->
+            <div class="item">
+              <img src="/static/picture/software2-2.png" alt="Thumb">
+              <div class="content">
+                <h4><span>02</span>设备效益分析</h4>
+              </div>
+            </div>
+            <!-- End Single item -->
+            <!-- Single item -->
+            <div class="item">
+              <img src="/static/picture/software2-3.png" alt="Thumb">
+              <div class="content">
+                <h4><span>03</span>设备实时参数</h4>
+              </div>
+            </div>
+            <!-- End Single item -->
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  
+           </div>
+          </div>
+    
+    
+
+  <footer class="bg-dark text-light">
+  <!-- Start Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container" style="text-align:center;">
+      <a target="_blank" href="http://beian.miit.gov.cn/">浙ICP备2022037344号</a>
+
+      <div style="width:300px;margin:0 auto;display: flex;justify-content: center;align-content: center">
+        <div style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+          <img src="/static/images/备案图标.png" style="float:left;"/>
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602012901"
+             style="float:left;margin: 0 0 0 5px;">浙公网安备 33010602012901号</a>
+        </div>
+      </div>
+
+      <a href="#">&copy;2022-2023 杭州星诚智控科技有限公司 版权所有</a>
+
+    </div>
   </div>
-  </div>
-  </div>
+  <!-- End Footer Bottom -->
+</footer>
   <!-- End Banner -->
 
   <!-- Star About Area
@@ -145,61 +175,12 @@
   <script src="/static/js/bootsnav.js"></script>
   <script src="/static/js/main.js"></script>
   <script src="/static/js/load-header.js"></script>
+    <script src="/static/js/load-breadcrumb.js"></script>
 </body>
 
 
 <style>
-  body,
-  .banner-area,
-  .banner-area div {
-    height: auto;
-  }
-
-  .maincontain {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .right-detial {
-    width: 1200px;
-    margin-left: 10px;
-    background-color: #ffffff
-  }
-
-  .nav-list {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* 垂直排列 */
-    justify-content: space-between;
-    /* 均匀分布 */
-  }
-
-  .nav-item {
-    flex: 1;
-    padding: 10px;
-    position: relative;
-    transition: background 0.3s ease;
-    border-radius: 4px;
-    margin-bottom: 5px;
-    color: black;
-  }
-
-  .nav-list span {
-    margin: 0;
-    color: #000;
-  }
-
-  .nav-list span:hover {
-    cursor: pointer;
-  }
-
   .detial-title {
-    margin-top: 40px;
     width: 100%;
     height: 70px;
     text-align: center;
